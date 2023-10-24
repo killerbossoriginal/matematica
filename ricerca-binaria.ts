@@ -1,13 +1,7 @@
 import { cin } from "node-cin";
 
 function compareNumbers(a: number, b: number) {
-    if (a > b) {
-        return 1;
-    }
-    if (a < b) {
-        return -1;
-    }
-    return 0;
+    return a - b;
 }
 
 function conta(seq: number[], chiave: number) {
@@ -34,7 +28,7 @@ async function main() {
     var number: any = await cin("Inserisci i numeri di elementi della sequenza", false)
     let seq: number[] = [];
 
-    for (let q = 0; q < parseInt(number); q++) {
+    for (let q = 0; q < parseInt(number) - 1; q++) {
         let nmb: any = await cin(`Inserisci il ${q + 1}° numero (indice ${q})`, false);
         seq.push(parseInt(nmb));
     }
