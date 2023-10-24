@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/node": "^20.8.8",
+    "node-cin": "^2023.2.5"
+  }
+}
